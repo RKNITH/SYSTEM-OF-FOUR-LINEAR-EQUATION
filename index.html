@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Equation Solver</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.2/math.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Linear Equation Solver with 4 Variables</h1>
+        <p>A system of linear equations with 4 variables is of the form:</p>
+        <pre>
+        a1x + b1y + c1z + d1w = e1
+        a2x + b2y + c2z + d2w = e2
+        a3x + b3y + c3z + d3w = e3
+        a4x + b4y + c4z + d4w = e4
+        </pre>
+        <form id="linearForm">
+            <h2>Equation 1</h2>
+            <label for="a1">a1:</label>
+            <input type="number" id="a1" name="a1" required>
+            <label for="b1">b1:</label>
+            <input type="number" id="b1" name="b1" required>
+            <label for="c1">c1:</label>
+            <input type="number" id="c1" name="c1" required>
+            <label for="d1">d1:</label>
+            <input type="number" id="d1" name="d1" required>
+            <label for="e1">e1:</label>
+            <input type="number" id="e1" name="e1" required>
+
+            <h2>Equation 2</h2>
+            <label for="a2">a2:</label>
+            <input type="number" id="a2" name="a2" required>
+            <label for="b2">b2:</label>
+            <input type="number" id="b2" name="b2" required>
+            <label for="c2">c2:</label>
+            <input type="number" id="c2" name="c2" required>
+            <label for="d2">d2:</label>
+            <input type="number" id="d2" name="d2" required>
+            <label for="e2">e2:</label>
+            <input type="number" id="e2" name="e2" required>
+
+            <h2>Equation 3</h2>
+            <label for="a3">a3:</label>
+            <input type="number" id="a3" name="a3" required>
+            <label for="b3">b3:</label>
+            <input type="number" id="b3" name="b3" required>
+            <label for="c3">c3:</label>
+            <input type="number" id="c3" name="c3" required>
+            <label for="d3">d3:</label>
+            <input type="number" id="d3" name="d3" required>
+            <label for="e3">e3:</label>
+            <input type="number" id="e3" name="e3" required>
+
+            <h2>Equation 4</h2>
+            <label for="a4">a4:</label>
+            <input type="number" id="a4" name="a4" required>
+            <label for="b4">b4:</label>
+            <input type="number" id="b4" name="b4" required>
+            <label for="c4">c4:</label>
+            <input type="number" id="c4" name="c4" required>
+            <label for="d4">d4:</label>
+            <input type="number" id="d4" name="d4" required>
+            <label for="e4">e4:</label>
+            <input type="number" id="e4" name="e4" required>
+
+            <button type="submit">Solve</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
